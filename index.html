@@ -1,0 +1,759 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<style>:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+<meta property="og:title" content="Celeste ライバー募集">
+<meta property="og:description" content="未経験から配信をはじめたい方を応援するライバー事務所 Celeste。応募は約1分、費用は一切かかりません。">
+<meta property="og:image" content="https://celeste0312-n.github.io/celeste-lp/logo.jpg">
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary">
+<link rel="icon" href="logo.jpg">
+<title>celeste ライバー募集</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="ライバー事務所Celeste。未経験から始めたい方、おうちでできる働き方を探している方、伸び悩んでいるライバーさんを応援します。">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Cormorant+Garamond:ital,wght@0,500;1,500&family=Shippori+Mincho:wght@500;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
+<style>
+/* Layout: a daytime-to-dusk sky. Full-bleed sky hero with twinkling stars and clouds, then an editorial two-column rhythm (label column + content) on a pale sky ground; one glass panel band and a constellation-style flow. Single light look, matched to the logo. */
+:root {
+  --ground: #F4F8FF;
+  --sky-1: #E2EDFF;
+  --sky-2: #BCD3F8;
+  --sky-3: #8EAEEB;
+  --ink: #1D2748;
+  --ink-soft: #56627F;
+  --accent: #4A66B8;
+  --line: rgba(74, 102, 184, .2);
+  --white: #FFFFFF;
+  --glass: rgba(255, 255, 255, .72);
+  --font-script: "Great Vibes", "Snell Roundhand", cursive;
+  --font-latin: "Cormorant Garamond", "Times New Roman", serif;
+  --font-display: "Shippori Mincho", "Hiragino Mincho ProN", "Yu Mincho", serif;
+  --font-body: "Zen Kaku Gothic New", "Hiragino Sans", "Yu Gothic", sans-serif;
+  color-scheme: light;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--ground); color: var(--ink);
+  font-family: var(--font-body); font-size: 15.5px; line-height: 2; letter-spacing: .04em;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: calc(80px + env(safe-area-inset-bottom, 0px));
+}
+@media (min-width: 760px) { body { padding-bottom: 0; } }
+body::before { content: ""; position: fixed; inset: 0 0 auto; height: env(safe-area-inset-top, 0px); z-index: 30; background: var(--sky-1); }
+a { color: inherit; }
+h1, h2, h3 { font-family: var(--font-display); font-weight: 600; text-wrap: balance; margin: 0; line-height: 1.6; letter-spacing: .08em; }
+p { margin: 0; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; border-radius: 6px; }
+
+/* header */
+.site-head { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 20; background: rgba(240, 246, 255, .8); backdrop-filter: blur(14px); border-bottom: 1px solid var(--line); }
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 8px; }
+.wordmark { font-family: var(--font-script); font-size: 34px; line-height: 1.1; text-decoration: none; color: var(--accent); letter-spacing: 0; }
+.head-link { font-size: 13px; font-weight: 500; text-decoration: none; letter-spacing: .12em; padding: 7px 18px; border: 1px solid var(--accent); color: var(--accent); border-radius: 999px; white-space: nowrap; }
+
+/* buttons */
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 54px; padding: 0 30px; border-radius: 999px;
+  font-family: var(--font-body); font-size: 15px; font-weight: 500; letter-spacing: .1em; text-decoration: none; transition: transform .2s ease, box-shadow .2s ease, background .2s ease; }
+.btn:hover { transform: translateY(-2px); }
+.btn-solid { background: var(--ink); color: var(--white); box-shadow: 0 12px 30px -14px rgba(29, 39, 72, .7); }
+.btn-glass { background: rgba(255, 255, 255, .55); color: var(--ink); border: 1px solid rgba(255, 255, 255, .9); backdrop-filter: blur(8px); }
+.btn .arrow { font-family: var(--font-latin); font-size: 18px; }
+
+/* hero */
+.hero { position: relative; overflow: hidden; color: var(--ink);
+  background: linear-gradient(180deg, #9DBBF0 0%, #BCD3F8 38%, #DCE9FD 72%, var(--ground) 100%); }
+#stars { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
+.clouds { position: absolute; left: -10%; right: -10%; bottom: -40px; height: 220px; pointer-events: none; filter: blur(14px); opacity: .95;
+  background:
+    radial-gradient(closest-side, #fff 60%, transparent) 2% 70% / 340px 170px no-repeat,
+    radial-gradient(closest-side, #fff 55%, transparent) 22% 95% / 420px 180px no-repeat,
+    radial-gradient(closest-side, #fff 55%, transparent) 70% 90% / 460px 190px no-repeat,
+    radial-gradient(closest-side, #fff 60%, transparent) 98% 65% / 360px 180px no-repeat; }
+.hero .wrap { position: relative; z-index: 1; display: grid; gap: 40px; grid-template-columns: 1fr; padding-block: 48px 120px; }
+@media (min-width: 900px) { .hero .wrap { grid-template-columns: 1fr 420px; align-items: center; padding-block: 88px 150px; } }
+.hero-copy { min-width: 0; display: grid; gap: 26px; }
+.kicker { font-family: var(--font-latin); font-style: italic; font-size: 17px; letter-spacing: .14em; color: var(--white); text-shadow: 0 1px 12px rgba(74, 102, 184, .5); }
+.hero h1 { font-size: clamp(30px, 6.4vw, 50px); color: var(--ink); letter-spacing: .1em; }
+.hero h1 em { font-style: normal; background: linear-gradient(transparent 62%, rgba(255, 255, 255, .85) 62%); }
+.hero-lead { max-width: 30em; color: var(--ink); }
+.points { display: flex; flex-wrap: wrap; gap: 8px 22px; margin: 0; padding: 0; list-style: none; font-size: 14px; font-weight: 500; }
+.points li::before { content: "✦"; color: var(--white); margin-right: 8px; text-shadow: 0 0 8px rgba(74, 102, 184, .6); }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.hero-note { font-size: 13px; color: var(--ink-soft); }
+
+.arch { justify-self: center; width: min(380px, 100%); aspect-ratio: 4 / 5; max-width: 100%; border-radius: 999px 999px 28px 28px; overflow: hidden; position: relative;
+  border: 1px solid rgba(255, 255, 255, .9); box-shadow: 0 30px 70px -30px rgba(29, 39, 72, .55), 0 0 0 10px rgba(255, 255, 255, .25); }
+.arch img { width: 100%; height: 100%; object-fit: cover; display: block; }
+
+/* sections: label column + content */
+section.block { padding-block: 80px; }
+section.block + section.block { border-top: 1px solid var(--line); }
+.cols { display: grid; gap: 28px; grid-template-columns: 1fr; }
+@media (min-width: 860px) { .cols { grid-template-columns: 290px 1fr; gap: 56px; } .cols .head { position: sticky; top: 96px; align-self: start; } }
+.head { display: grid; gap: 10px; align-content: start; }
+.label { font-family: var(--font-latin); font-style: italic; font-size: 19px; color: var(--accent); letter-spacing: .08em; }
+.head h2 { font-size: clamp(23px, 4.4vw, 30px); }
+.head p { color: var(--ink-soft); font-size: 14.5px; }
+.body { min-width: 0; }
+
+/* for you */
+.rows { display: grid; }
+.row { display: grid; grid-template-columns: 34px 1fr; gap: 6px 14px; padding-block: 24px; border-bottom: 1px solid var(--line); }
+.row:first-child { padding-top: 0; }
+.row .mark { grid-row: span 2; font-size: 18px; color: var(--sky-3); line-height: 1.7; }
+.row h3 { font-size: 18px; }
+.row p { color: var(--ink-soft); }
+
+/* work style */
+.duo { display: grid; gap: 40px; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .duo { grid-template-columns: 1fr 1fr; gap: 48px; } }
+.duo h3 { font-family: var(--font-latin); font-style: italic; font-weight: 500; font-size: 24px; letter-spacing: .04em; color: var(--accent); display: flex; align-items: baseline; gap: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--ink); }
+.duo h3 small { font-family: var(--font-body); font-style: normal; font-size: 13px; color: var(--ink-soft); letter-spacing: .12em; }
+.duo ul { list-style: none; margin: 0; padding: 0; }
+.duo li { padding-block: 16px; border-bottom: 1px solid var(--line); }
+.duo li b { display: block; font-family: var(--font-display); font-weight: 600; font-size: 16.5px; }
+.duo li p { color: var(--ink-soft); font-size: 14.5px; }
+.aside { margin-top: 36px; font-family: var(--font-display); font-size: 16px; line-height: 2.1; padding-left: 20px; border-left: 1px solid var(--sky-3); max-width: 34em; }
+
+/* support band */
+.band { background: linear-gradient(180deg, var(--sky-1), #D3E3FC 50%, var(--sky-1)); position: relative; }
+.glass-row { display: grid; gap: 14px; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .glass-row { grid-template-columns: repeat(3, 1fr); } }
+.glass { background: var(--glass); border: 1px solid rgba(255, 255, 255, .95); backdrop-filter: blur(10px); border-radius: 22px; padding: 28px 24px; display: grid; gap: 10px; align-content: start; min-width: 0;
+  box-shadow: 0 18px 40px -26px rgba(29, 39, 72, .45); }
+.glass .en { font-family: var(--font-latin); font-style: italic; color: var(--accent); font-size: 16px; }
+.glass h3 { font-size: 18px; }
+.glass p { color: var(--ink-soft); font-size: 14.5px; }
+
+/* tips */
+.tips { list-style: none; margin: 0; padding: 0; display: grid; }
+.tips li { display: grid; grid-template-columns: 1fr; gap: 4px; padding-block: 20px; border-bottom: 1px solid var(--line); }
+@media (min-width: 720px) { .tips li { grid-template-columns: 250px 1fr; gap: 24px; } }
+.tips li:first-child { padding-top: 0; }
+.tips b { font-family: var(--font-display); font-weight: 600; font-size: 16.5px; }
+.tips b::before { content: "☾"; color: var(--sky-3); margin-right: 10px; }
+.tips p { color: var(--ink-soft); font-size: 14.5px; }
+
+/* faq */
+.faq details { border-bottom: 1px solid var(--line); }
+.faq details:first-child { border-top: 1px solid var(--line); }
+.faq summary { list-style: none; cursor: pointer; padding: 22px 44px 22px 0; position: relative; font-family: var(--font-display); font-weight: 600; font-size: 16.5px; display: flex; gap: 14px; align-items: baseline; }
+.faq summary::-webkit-details-marker { display: none; }
+.faq summary .q { font-family: var(--font-latin); font-style: italic; font-size: 22px; color: var(--accent); line-height: 1; }
+.faq summary::after { content: ""; position: absolute; right: 8px; top: 50%; width: 10px; height: 10px; border-right: 1.5px solid var(--accent); border-bottom: 1.5px solid var(--accent); transform: translateY(-70%) rotate(45deg); transition: transform .25s ease; }
+.faq details[open] summary::after { transform: translateY(-30%) rotate(-135deg); }
+.faq .a { padding: 0 0 24px 34px; color: var(--ink-soft); font-size: 14.5px; }
+
+/* flow: constellation */
+.flow { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; position: relative; }
+.flow li { position: relative; padding: 0 0 36px 44px; }
+.flow li:last-child { padding-bottom: 0; }
+.flow li::before { content: "✦"; position: absolute; left: 0; top: -2px; width: 26px; text-align: center; font-size: 20px; color: var(--accent); text-shadow: 0 0 12px rgba(142, 174, 235, .9); }
+.flow li:not(:last-child)::after { content: ""; position: absolute; left: 12.5px; top: 30px; bottom: 6px; border-left: 1px dashed var(--sky-3); }
+.flow .step { font-family: var(--font-latin); font-style: italic; color: var(--accent); font-size: 15px; letter-spacing: .1em; }
+.flow h3 { font-size: 18px; }
+.flow p { color: var(--ink-soft); font-size: 14.5px; }
+.notice { margin-top: 40px; padding: 20px 22px; border: 1px solid var(--line); border-radius: 16px; background: var(--white); font-size: 13.5px; color: var(--ink-soft); display: grid; gap: 4px; }
+.notice b { color: var(--ink); font-weight: 700; }
+
+/* final */
+.final { position: relative; overflow: hidden; border-radius: 32px; color: var(--ink);
+  background: linear-gradient(180deg, #A5C1F2, #CFE0FB 60%, #EAF2FF); padding: 56px 24px; display: grid; gap: 22px; justify-items: center; text-align: center; }
+.final .logo-badge { width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 1px solid rgba(255, 255, 255, .9); box-shadow: 0 12px 30px -14px rgba(29, 39, 72, .5); }
+.final .logo-badge img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.final h2 { font-size: clamp(23px, 4.8vw, 32px); }
+.final > p { max-width: 30em; }
+.dm { width: 100%; max-width: 540px; background: rgba(255, 255, 255, .8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, .95); border-radius: 20px; padding: 6px 20px; text-align: left; }
+.dm-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding-block: 14px; }
+.dm-row + .dm-row { border-top: 1px solid var(--line); }
+.dm-row > div { min-width: 0; flex: 1; }
+.dm-label { font-size: 11.5px; color: var(--ink-soft); letter-spacing: .14em; }
+.dm-text { font-weight: 500; overflow-wrap: anywhere; user-select: all; line-height: 1.7; }
+.copy { font-family: var(--font-body); font-size: 12.5px; letter-spacing: .1em; color: var(--accent); background: transparent; border: 1px solid var(--accent); border-radius: 999px; padding: 5px 14px; cursor: pointer; white-space: nowrap; }
+.final .actions { justify-content: center; }
+
+/* apps */
+.apps { display: grid; gap: 14px; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .apps { grid-template-columns: 1fr 1fr; } }
+.app { background: var(--white); border: 1px solid var(--line); border-radius: 20px; padding: 24px; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.app h3 { font-family: var(--font-latin); font-weight: 500; font-size: 26px; letter-spacing: .02em; }
+.age { justify-self: start; font-size: 12.5px; font-weight: 700; letter-spacing: .08em; padding: 2px 12px; border-radius: 999px; background: var(--sky-1); color: var(--accent); }
+.app p { color: var(--ink-soft); font-size: 14.5px; }
+
+.app h3 small { font-family: var(--font-body); font-size: 12px; color: var(--ink-soft); letter-spacing: .1em; margin-left: 6px; }
+.app-lead { color: var(--ink) !important; font-size: 15px !important; }
+.feat { list-style: none; margin: 4px 0 0; padding: 0; display: grid; gap: 6px; }
+.feat li { position: relative; padding-left: 20px; font-size: 14px; line-height: 1.8; color: var(--ink-soft); }
+.feat li::before { content: "✦"; position: absolute; left: 0; top: 0; font-size: 11px; color: var(--sky-3); line-height: 2.3; }
+.contact-in { display: grid; gap: 6px; margin-top: 6px; }
+.contact-in label { font-size: 13.5px; font-weight: 700; }
+
+/* trust strip */
+.trust { list-style: none; margin: 0; padding: 0; display: grid; gap: 10px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .trust { grid-template-columns: repeat(2, 1fr); } }
+.trust li { background: var(--white); border: 1px solid var(--line); border-radius: 16px; padding: 14px 16px; font-size: 13.5px; line-height: 1.8; color: var(--ink-soft); }
+.trust b { display: block; color: var(--ink); font-size: 14.5px; }
+
+/* form */
+.form-card { background: var(--white); border-radius: 28px; border: 1px solid var(--line); box-shadow: 0 24px 60px -36px rgba(29, 39, 72, .5); padding: 32px 22px; display: grid; gap: 26px; }
+@media (min-width: 720px) { .form-card { padding: 44px 48px; } }
+.form-top { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 8px 16px; }
+.form-top h3 { font-size: 21px; }
+.time { font-size: 13px; color: var(--accent); letter-spacing: .08em; }
+form { display: grid; gap: 24px; }
+.field { display: grid; gap: 8px; min-width: 0; }
+.field > label, .field > legend { font-weight: 700; font-size: 14.5px; padding: 0; display: flex; align-items: center; gap: 8px; }
+fieldset.field { border: 0; margin: 0; padding: 0; }
+.req, .opt { font-size: 11px; font-weight: 700; letter-spacing: .08em; padding: 1px 8px; border-radius: 6px; }
+.req { background: var(--ink); color: var(--white); }
+.opt { background: var(--sky-1); color: var(--ink-soft); }
+.hint { font-size: 12.5px; color: var(--ink-soft); line-height: 1.7; }
+input[type="text"], select, textarea { width: 100%; font: inherit; font-size: 16px; letter-spacing: .02em; color: var(--ink); background: var(--ground); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+textarea { min-height: 110px; resize: vertical; line-height: 1.8; }
+input[type="text"]:focus, select:focus, textarea:focus { outline: none; border-color: var(--accent); background: var(--white); box-shadow: 0 0 0 3px rgba(74, 102, 184, .15); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { position: relative; }
+.chip input { position: absolute; opacity: 0; inset: 0; cursor: pointer; }
+.chip span { display: inline-block; padding: 8px 16px; border-radius: 999px; border: 1px solid var(--line); background: var(--ground); font-size: 14px; line-height: 1.6; cursor: pointer; transition: background .15s, border-color .15s, color .15s; }
+.chip input:checked + span { background: var(--ink); border-color: var(--ink); color: var(--white); }
+.chip input:focus-visible + span { outline: 2px solid var(--accent); outline-offset: 2px; }
+.chip input:disabled + span { opacity: .4; cursor: not-allowed; text-decoration: line-through; }
+.minor-box { background: var(--sky-1); border-radius: 14px; padding: 14px 16px; display: grid; gap: 8px; font-size: 13.5px; }
+.check { display: flex; gap: 10px; align-items: flex-start; font-size: 14px; line-height: 1.8; cursor: pointer; }
+.check input { width: 18px; height: 18px; margin-top: 5px; accent-color: var(--ink); flex: none; }
+.err { color: #B4234B; font-size: 13px; }
+.submit { width: 100%; min-height: 58px; font-size: 16px; border: 0; cursor: pointer; }
+.after { font-size: 12.5px; color: var(--ink-soft); text-align: center; }
+.done { display: grid; gap: 16px; text-align: center; justify-items: center; }
+.done h3 { font-size: 21px; }
+.done p { color: var(--ink-soft); max-width: 30em; }
+.done .dm { text-align: left; }
+.or { display: flex; align-items: center; gap: 14px; color: var(--ink-soft); font-size: 13px; margin-top: 8px; }
+.or::before, .or::after { content: ""; flex: 1; border-top: 1px solid var(--line); }
+.privacy { font-size: 13px; color: var(--ink-soft); display: grid; gap: 6px; }
+.privacy b { color: var(--ink); }
+
+/* footer */
+footer { padding-block: 56px 48px; border-top: 1px solid var(--line); font-size: 13px; color: var(--ink-soft); }
+footer .wrap { display: grid; gap: 18px; }
+footer .wordmark { font-size: 40px; }
+footer dl { margin: 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 22px; }
+footer dt { color: var(--ink); font-weight: 500; }
+footer dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+
+/* mobile fixed cta */
+.fixed-cta { position: fixed; left: 0; right: 0; bottom: 0; z-index: 25; background: rgba(240, 246, 255, .88); backdrop-filter: blur(14px); border-top: 1px solid var(--line);
+  padding: 10px max(16px, env(safe-area-inset-right, 0px)) calc(10px + env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px)); }
+.fixed-cta .btn { width: 100%; min-height: 50px; }
+@media (min-width: 760px) { .fixed-cta { display: none; } }
+
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } .btn, .faq summary::after { transition: none; } }
+</style>
+
+</head>
+<body>
+<header class="site-head">
+  <div class="wrap">
+    <a class="wordmark" href="#top" aria-label="Celeste トップへ">Celeste</a>
+    <a class="head-link" href="#apply">応募する</a>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas id="stars" aria-hidden="true"></canvas>
+    <div class="clouds" aria-hidden="true"></div>
+    <div class="wrap">
+      <div class="hero-copy">
+        <span class="kicker">Liver Agency — Celeste</span>
+        <h1>あなたの声を、<br><em>おうちから</em>届けてみませんか。</h1>
+        <p class="hero-lead">ライバー事務所 Celeste は、ライブ配信をはじめたい方、続けていきたい方に寄り添う事務所です。「少し気になる」くらいの気持ちで大丈夫。まずはお話ししてみませんか。</p>
+        <ul class="points">
+          <li>未経験の方も歓迎</li>
+          <li>スマホではじめられる</li>
+          <li>おうちで活動できる</li>
+        </ul>
+        <div class="actions">
+          <a class="btn btn-solid" href="#apply">応募フォームへ <span class="arrow">→</span></a>
+          <a class="btn btn-glass" href="https://www.instagram.com/celeste_live/" target="_blank" rel="noopener">InstagramでDMする</a>
+        </div>
+        <p class="hero-note">フォームは約1分で入力できます。「まずは話を聞きたい」だけでも大丈夫です。</p>
+      </div>
+      <div class="arch">
+        <img src="logo.jpg" alt="Celeste のロゴ。水色の空に三日月と星、白い筆記体の文字">
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap cols">
+      <div class="head">
+        <span class="label">For you</span>
+        <h2>こんな方を<br>応援しています</h2>
+      </div>
+      <div class="body rows">
+        <div class="row"><span class="mark">✦</span><h3>配信に興味はあるけれど、一歩が踏み出せない</h3><p>「何を話せばいいの？」「私にできるかな」という不安から、一緒に考えます。</p></div>
+        <div class="row"><span class="mark">✦</span><h3>おうちでできる働き方を探している</h3><p>通勤なしで、空いた時間を活かせる働き方のひとつとして、ライブ配信をご紹介しています。</p></div>
+        <div class="row"><span class="mark">✦</span><h3>配信しているけれど、伸び悩んでいる</h3><p>ひとりで悩まずに、配信の時間や内容を一緒に見直してみませんか。</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap cols">
+      <div class="head">
+        <span class="label">Work style</span>
+        <h2>ライバーという<br>働き方</h2>
+        <p>良いところも、大変なところも、はじめにお伝えしておきたいと思っています。</p>
+      </div>
+      <div class="body">
+        <div class="duo">
+          <div>
+            <h3>Bright side <small>良いところ</small></h3>
+            <ul>
+              <li><b>おうちで活動できる</b><p>通勤がなく、スマホがあれば自分の部屋から配信できます。</p></li>
+              <li><b>時間を自分で決められる</b><p>生活リズムに合わせて、配信する時間帯を選べます。</p></li>
+              <li><b>人とのつながりが生まれる</b><p>コメントでのやりとりから、応援してくれる人との関係が育っていきます。</p></li>
+            </ul>
+          </div>
+          <div>
+            <h3>Honest side <small>大変なところ</small></h3>
+            <ul>
+              <li><b>成果が出るまで時間がかかる</b><p>はじめは見てくれる人が少ないことも。続けることが大切です。</p></li>
+              <li><b>自己管理が必要</b><p>決まった出勤がないぶん、配信のペースは自分でつくっていきます。</p></li>
+              <li><b>プライバシーへの配慮</b><p>映り込みや話す内容から、身元が分からないよう気をつける必要があります。</p></li>
+            </ul>
+          </div>
+        </div>
+        <p class="aside">大変なところがあるからこそ、ひとりで抱え込まないことが大切です。Celeste では、困ったときに相談できる環境づくりを大切にしています。</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="block band">
+    <div class="wrap cols">
+      <div class="head">
+        <span class="label">Support</span>
+        <h2>Celeste の<br>サポート</h2>
+        <p>はじめての方も、すでに配信している方も、それぞれのペースに合わせてサポートします。</p>
+      </div>
+      <!-- TODO: 研修・相談体制・機材など、確定したサポート内容に差し替える -->
+      <div class="body glass-row">
+        <article class="glass"><span class="en">First steps</span><h3>はじめ方のご案内</h3><p>配信アプリの使い方や、最初の配信で話すことなど、スタートまでを一緒に準備します。</p></article>
+        <article class="glass"><span class="en">Talk anytime</span><h3>いつでも相談できる</h3><p>「コメントが来ない」「続けるのがつらい」など、小さな悩みも気軽に話してください。</p></article>
+        <article class="glass"><span class="en">Privacy</span><h3>身バレ対策のアドバイス</h3><p>部屋の映り込みや話す内容など、安心して配信するためのポイントをお伝えします。</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap cols">
+      <div class="head">
+        <span class="label">Apps</span>
+        <h2>配信するアプリ</h2>
+        <p>年齢や配信したいスタイルに合わせて、どのアプリが合うか一緒に考えます。</p>
+        <p style="font-size:12.5px">※ 各アプリの条件や機能は、アプリ側の変更により変わることがあります。</p>
+      </div>
+      <div class="body apps">
+        <article class="app">
+          <h3>TikTok LIVE</h3>
+          <span class="age">18歳以上</span>
+          <p class="app-lead">短い動画で知ってもらい、ライブで仲よくなる。たくさんの人に見つけてもらいやすいアプリです。</p>
+          <ul class="feat">
+            <li>「おすすめ」に表示されることがあり、まだ自分を知らない人にも届くチャンスがあります</li>
+            <li>ふだんの動画投稿とライブを組み合わせて、少しずつファンを増やしていけます</li>
+            <li>コメントやギフトで、リアルタイムにやりとりできます</li>
+            <li>ライブ機能を使うには、年齢やフォロワー数などの条件があります。今の状況で配信できるか、一緒に確認します</li>
+          </ul>
+        </article>
+        <article class="app">
+          <h3>MuchU LIVE <small>ムチューライブ</small></h3>
+          <span class="age">18歳未満の方もご相談OK</span>
+          <p class="app-lead">音楽に特化したライブ配信アプリです。歌うこと、話すことが好きな方に。</p>
+          <ul class="feat">
+            <li>弾き語り、カラオケ、オリジナル曲、ラジオのようなトーク配信などが中心です</li>
+            <li>顔を出さずに、声や音楽で配信することもできます</li>
+            <li>スマホひとつで、おうちから配信できます</li>
+            <li>18歳未満の方は、保護者の方の同意をいただいたうえでご案内します</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap cols">
+      <div class="head">
+        <span class="label">Tips</span>
+        <h2>配信を続けるための<br>5つのヒント</h2>
+        <p>Instagram・Threads でも発信している内容から、少しだけご紹介します。</p>
+      </div>
+      <ul class="body tips">
+        <li><b>配信する時間を決める</b><p>いつも同じ時間にいると、見に来てくれる人が予定を立てやすくなります。</p></li>
+        <li><b>コメントした人の名前を呼ぶ</b><p>「〇〇さん、ありがとう」のひと言で、また来たくなる配信になります。</p></li>
+        <li><b>沈黙を怖がらない</b><p>少し静かな時間があっても大丈夫。自然体のほうが居心地のよい場所になります。</p></li>
+        <li><b>無理せず続ける</b><p>長時間よりも、続けられるペースが大切。体調や気持ちを優先してください。</p></li>
+        <li><b>身バレ対策をしておく</b><p>窓の外の景色、郵便物、よく行くお店の話などは、映さない・話さないのが安心です。</p></li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="wrap cols">
+      <div class="head">
+        <span class="label">Q &amp; A</span>
+        <h2>よくあるご質問</h2>
+      </div>
+      <div class="body faq">
+        <details><summary><span class="q">Q.</span>顔出しは必須ですか？</summary><p class="a">顔を出さずに配信している方もいます。声だけの配信やイラストを使った配信など、スタイルはさまざまです。どんな形が合いそうか、ご相談のときに一緒に考えましょう。</p></details>
+        <details><summary><span class="q">Q.</span>スマホだけでできますか？</summary><p class="a">多くの配信アプリは、スマホ1台ではじめられます。最初から特別な機材をそろえる必要はありません。</p></details>
+        <details><summary><span class="q">Q.</span>未経験でも大丈夫ですか？</summary><p class="a">はい、未経験の方も歓迎しています。はじめての配信の準備から、一緒に進めていきます。</p></details>
+        <details><summary><span class="q">Q.</span>何歳から応募できますか？</summary><p class="a">TikTok LIVE は18歳以上の方が対象です。MuchU LIVE は18歳未満の方もご相談いただけます。その場合は、保護者の方の同意が必要です。</p></details>
+        <details><summary><span class="q">Q.</span>応募したら、必ず所属しないといけませんか？</summary><p class="a">いいえ。お話を聞いてから、ご自身で決めていただければ大丈夫です。合わないと感じたら、その時点でお断りいただけます。</p></details>
+        <details><summary><span class="q">Q.</span>1日どれくらい配信すればいいですか？</summary><p class="a">生活リズムや目標によって人それぞれです。まずは無理のない時間から、続けやすいペースを一緒に見つけていきましょう。</p></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="block band">
+    <div class="wrap cols">
+      <div class="head">
+        <span class="label">Flow</span>
+        <h2>ご相談から<br>配信スタートまで</h2>
+      </div>
+      <div class="body">
+        <!-- TODO: 面談の有無など、確定した応募後の流れに差し替える -->
+        <ol class="flow">
+          <li><span class="step">Step 1</span><h3>フォームから応募</h3><p>このページの応募フォームに入力してください。Instagram・Threads の DM からでも受け付けています。</p></li>
+          <li><span class="step">Step 2</span><h3>お話しする</h3><p>気になっていることや、どんなふうに活動したいかを伺います。相談だけでも大丈夫です。</p></li>
+          <li><span class="step">Step 3</span><h3>配信スタート</h3><p>準備ができたら配信デビュー。はじめてからも引き続きサポートします。</p></li>
+        </ol>
+        <div class="notice">
+          <b>報酬について</b>
+          <p>報酬は、利用する配信アプリや活動の内容によって異なります。一定の収入をお約束するものではありません。仕組みについては、ご相談の際にていねいにご説明します。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="block" id="apply">
+    <div class="wrap cols">
+      <div class="head">
+        <span class="label">Entry</span>
+        <h2>応募フォーム</h2>
+        <p>「まずは話を聞いてみたい」という方も、こちらからどうぞ。入力は約1分です。</p>
+      </div>
+      <div class="body" style="display:grid;gap:22px">
+                <ul class="trust">
+          <li><b>費用は一切かかりません</b>登録料など、応募・所属にかかるお金はありません。</li>
+          <li><b>相談だけでもOK</b>お話を聞いてから、所属するかどうかを決められます。</li>
+          <li><b>ご連絡は希望の方法で</b>LINE・メール・DMから、連絡を受けやすい方法を選べます。</li>
+          <li><b>個人情報の取り扱い</b>いただいた情報は、応募へのご連絡にのみ使用します。</li>
+        </ul>
+
+        <div class="form-card">
+          <div id="form-area">
+            <div class="form-top"><h3>Celeste ライバー応募</h3><span class="time">所要時間 約1分</span></div>
+            <form id="entry" novalidate style="margin-top:24px">
+              <div class="field">
+                <label for="f-name">お名前 <span class="req">必須</span></label>
+                <input type="text" id="f-name" name="name" autocomplete="nickname" placeholder="ニックネームでも大丈夫です">
+              </div>
+
+              <div class="field">
+                <label for="f-age">年齢 <span class="req">必須</span></label>
+                <select id="f-age" name="age">
+                  <option value="">選択してください</option>
+                  <option value="17歳以下">17歳以下</option>
+                  <option value="18〜19歳">18〜19歳</option>
+                  <option value="20〜24歳">20〜24歳</option>
+                  <option value="25〜29歳">25〜29歳</option>
+                  <option value="30代">30代</option>
+                  <option value="40代以上">40代以上</option>
+                </select>
+                <div class="minor-box" id="minor-box" hidden>
+                  <p>18歳未満の方は、MuchU LIVE でのご案内になります。保護者の方の同意が必要です。</p>
+                  <label class="check"><input type="checkbox" id="f-guardian" name="guardian"> 保護者の同意を得ています（得る予定です）</label>
+                </div>
+              </div>
+
+              <fieldset class="field">
+                <legend>ご希望の連絡方法 <span class="req">必須</span></legend>
+                <div class="chips">
+                  <label class="chip"><input type="radio" name="method" id="m-line" value="LINE"><span>LINE</span></label>
+                  <label class="chip"><input type="radio" name="method" id="m-mail" value="メール"><span>メール</span></label>
+                  <label class="chip"><input type="radio" name="method" id="m-dm" value="Instagram・Threads のDM"><span>Instagram・Threads のDM</span></label>
+                </div>
+                <div class="contact-in" id="contact-in" hidden>
+                  <label for="f-contact" id="f-contact-label">連絡先</label>
+                  <input type="text" id="f-contact" name="contact" autocomplete="off">
+                  <span class="hint" id="f-contact-hint"></span>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="f-sns">Instagram・TikTok などのアカウント <span class="opt">任意</span></label>
+                <input type="text" id="f-sns" name="sns" autocomplete="off" placeholder="例）Instagram @celeste_live">
+                <span class="hint">お持ちの方はご記入ください。連絡がつかないときの予備としても使わせていただきます。</span>
+              </div>
+
+              <fieldset class="field">
+                <legend>配信したいアプリ <span class="opt">任意</span></legend>
+                <div class="chips">
+                  <label class="chip"><input type="radio" name="app" id="app-tiktok" value="TikTok LIVE"><span>TikTok LIVE</span></label>
+                  <label class="chip"><input type="radio" name="app" id="app-muchu" value="MuchU LIVE"><span>MuchU LIVE</span></label>
+                  <label class="chip"><input type="radio" name="app" id="app-undecided" value="まだ決めていない"><span>まだ決めていない</span></label>
+                </div>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>配信の経験 <span class="opt">任意</span></legend>
+                <div class="chips">
+                  <label class="chip"><input type="radio" name="exp" id="exp-none" value="はじめて"><span>はじめて</span></label>
+                  <label class="chip"><input type="radio" name="exp" id="exp-some" value="少しある"><span>少しある</span></label>
+                  <label class="chip"><input type="radio" name="exp" id="exp-now" value="いま配信している"><span>いま配信している</span></label>
+                </div>
+              </fieldset>
+
+              <fieldset class="field">
+                <legend>顔出しについて <span class="opt">任意</span></legend>
+                <div class="chips">
+                  <label class="chip"><input type="radio" name="face" id="face-yes" value="顔出しOK"><span>顔出しOK</span></label>
+                  <label class="chip"><input type="radio" name="face" id="face-no" value="顔出しなしがいい"><span>顔出しなしがいい</span></label>
+                  <label class="chip"><input type="radio" name="face" id="face-undecided" value="相談したい"><span>相談したい</span></label>
+                </div>
+              </fieldset>
+
+              <div class="field">
+                <label for="f-note">聞いてみたいこと <span class="opt">任意</span></label>
+                <textarea id="f-note" name="note" placeholder="不安なことや、気になっていることがあればどうぞ"></textarea>
+              </div>
+
+              <div class="field">
+                <label class="check"><input type="checkbox" id="f-agree" name="agree"> <span><a href="#privacy">個人情報の取り扱い</a>に同意します</span></label>
+              </div>
+
+              <p class="err" id="form-err" role="alert" hidden></p>
+              <button class="btn btn-solid submit" type="submit">内容を確認して応募する <span class="arrow">→</span></button>
+              <p class="after">応募後、ご希望の連絡方法で Celeste からご連絡します。お話を聞いてからお断りいただいても大丈夫です。</p>
+            </form>
+          </div>
+
+          <div class="done" id="done" hidden>
+            <span class="label">Thank you</span>
+            <h3 id="done-title">ご応募ありがとうございます</h3>
+            <p id="done-text"></p>
+            <div class="dm" id="done-dm" hidden>
+              <div class="dm-row">
+                <div><div class="dm-label">送る内容</div><div class="dm-text" id="entry-text" style="white-space:pre-line"></div></div>
+                <button class="copy" type="button" id="copy-entry" data-target="entry-text">コピー</button>
+              </div>
+            </div>
+            <div class="actions" id="done-actions" hidden style="justify-content:center">
+              <a class="btn btn-solid" href="https://www.instagram.com/celeste_live/" target="_blank" rel="noopener">InstagramでDMを送る <span class="arrow">→</span></a>
+              <a class="btn btn-glass" href="https://www.threads.com/@celeste_live" target="_blank" rel="noopener">ThreadsでDMを送る</a>
+            </div>
+          </div>
+        </div>
+
+        <p class="or">フォームが苦手な方は</p>
+        <div class="dm" style="max-width:none">
+          <div class="dm-row">
+            <div><div class="dm-label">DM で応募する</div><div class="dm-text" id="msg">サイトを見ました。ライバーのお仕事について、話を聞いてみたいです🌙</div></div>
+            <button class="copy" id="copy-msg" type="button" data-target="msg">コピー</button>
+          </div>
+          <div class="dm-row">
+            <div><div class="dm-label">送り先</div><div class="dm-text" id="acct">Instagram・Threads ともに @celeste_live</div></div>
+            <a class="copy" href="https://www.instagram.com/celeste_live/" target="_blank" rel="noopener" style="text-decoration:none">開く</a>
+          </div>
+        </div>
+
+        <div class="privacy" id="privacy">
+          <b>個人情報の取り扱いについて</b>
+          <p>応募フォームでいただいた情報は、応募へのご連絡と、ご相談・面談のご案内にのみ使用します。法令にもとづく場合を除き、ご本人の同意なく第三者に提供することはありません。削除をご希望の場合は、DM でお知らせください。</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span class="wordmark">Celeste</span>
+    <!-- TODO: 会社名・所在地・連絡先を記入（求人では募集者の名称・所在地・連絡先の明示が必要） -->
+    <dl>
+      <dt>運営</dt><dd>ライバー事務所 Celeste</dd>
+      <dt>事業内容</dt><dd>ライブ配信者（ライバー）の募集・サポート</dd>
+      <dt>Instagram</dt><dd><a href="https://www.instagram.com/celeste_live/" target="_blank" rel="noopener">@celeste_live</a></dd>
+      <dt>Threads</dt><dd><a href="https://www.threads.com/@celeste_live" target="_blank" rel="noopener">@celeste_live</a></dd>
+    </dl>
+    <p>© Celeste</p>
+  </div>
+</footer>
+
+<div class="fixed-cta">
+  <a class="btn btn-solid" href="#apply">応募フォームへ（約1分） <span class="arrow">→</span></a>
+</div>
+
+<script>
+// copy buttons
+document.querySelectorAll('button.copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var el = document.getElementById(btn.dataset.target);
+    var reset = function () { setTimeout(function () { btn.textContent = 'コピー'; }, 1800); };
+    var fallback = function () {
+      var r = document.createRange(); r.selectNodeContents(el);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = '選択しました'; reset();
+    };
+    try {
+      navigator.clipboard.writeText(el.textContent.trim()).then(function () { btn.textContent = 'コピーしました'; reset(); }, fallback);
+    } catch (e) { fallback(); }
+  });
+});
+
+// ---- entry form ----
+// Googleフォームと連携すると、応募内容がスプレッドシートに直接届きます。
+// action に Googleフォームの formResponse URL、entries に各項目の entry ID を入れてください。
+// 空のままのときは、入力内容をまとめて DM で送ってもらう方式になります。
+var GOOGLE_FORM = {
+  action: 'https://docs.google.com/forms/d/e/1FAIpQLSfrnko3VGsNtcMKQVg8ZUQudIj5B86MfxX4KdnQu3rhqtYFMQ/formResponse',
+  entries: { name: 'entry.510701935', age: 'entry.1727431857', guardian: 'entry.411394396', method: 'entry.326692740', contact: 'entry.1753308493', sns: 'entry.249031065', app: 'entry.1169267953', exp: 'entry.1785570590', face: 'entry.972773617', note: 'entry.1576867973' }
+};
+(function () {
+  var form = document.getElementById('entry'); if (!form) return;
+  var age = document.getElementById('f-age');
+  var minorBox = document.getElementById('minor-box');
+  var tiktok = document.getElementById('app-tiktok');
+  var err = document.getElementById('form-err');
+
+  age.addEventListener('change', function () {
+    var minor = age.value === '17歳以下';
+    minorBox.hidden = !minor;
+    tiktok.disabled = minor;
+    if (minor && tiktok.checked) { tiktok.checked = false; document.getElementById('app-muchu').checked = true; }
+  });
+
+  function val(name) {
+    var el = form.elements[name];
+    if (!el) return '';
+    if (el.type === 'checkbox') return el.checked ? 'はい' : '';
+    return (el.value || '').trim();
+  }
+
+  var CONTACT = {
+    'LINE': ['LINE ID', 'LINEの設定 → プロフィール → ID でご確認いただけます。', 'text'],
+    'メール': ['メールアドレス', 'Celeste からのメールが届くよう、受信設定をご確認ください。', 'email'],
+    'Instagram・Threads のDM': ['アカウント名', 'こちらから DM をお送りします。DM の受け取り設定をご確認ください。', 'text']
+  };
+  var cIn = document.getElementById('contact-in'), cField = document.getElementById('f-contact');
+  Array.prototype.forEach.call(form.elements.method, function (r) {
+    r.addEventListener('change', function () {
+      var c = CONTACT[r.value]; cIn.hidden = false;
+      document.getElementById('f-contact-label').textContent = c[0];
+      document.getElementById('f-contact-hint').textContent = c[1];
+      cField.type = c[2]; cField.inputMode = c[2] === 'tel' ? 'tel' : (c[2] === 'email' ? 'email' : 'text');
+      cField.placeholder = c[2] === 'email' ? 'example@mail.com' : (c[2] === 'tel' ? '090-1234-5678' : '');
+    });
+  });
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var missing = [];
+    if (!val('name')) missing.push('お名前');
+    if (!val('age')) missing.push('年齢');
+    if (!val('method')) missing.push('ご希望の連絡方法');
+    else if (!val('contact')) missing.push(CONTACT[val('method')][0]);
+    else if (val('method') === 'メール' && !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(val('contact'))) missing.push('メールアドレスの形式');
+    if (val('age') === '17歳以下' && !val('guardian')) missing.push('保護者の同意');
+    if (!val('agree')) missing.push('個人情報の取り扱いへの同意');
+    if (missing.length) {
+      err.textContent = missing.join('・') + ' をご確認ください。';
+      err.hidden = false; err.scrollIntoView({ block: 'center', behavior: 'smooth' });
+      return;
+    }
+    err.hidden = true;
+
+    var data = { name: val('name'), age: val('age'), guardian: val('guardian'), method: val('method'), contact: val('contact'), sns: val('sns'),
+      app: val('app') || '未選択', exp: val('exp') || '未選択', face: val('face') || '未選択', note: val('note') };
+
+    var showDone = function (sent) {
+      document.getElementById('form-area').hidden = true;
+      document.getElementById('done').hidden = false;
+      if (sent) {
+        document.getElementById('done-text').textContent = '内容を受け付けました。ご希望の連絡方法で、Celeste からご連絡します。少しお待ちください。';
+      } else {
+        document.getElementById('done-title').textContent = 'あと少しで応募完了です';
+        document.getElementById('done-text').textContent = '下の内容をコピーして、Instagram か Threads の @celeste_live に DM で送ってください。届いたら、こちらからお返事します。';
+        var lines = ['【Celeste 応募】', 'お名前：' + data.name, '年齢：' + data.age];
+        if (data.age === '17歳以下') lines.push('保護者の同意：あり');
+        lines.push('希望の連絡方法：' + data.method + '（' + data.contact + '）');
+        if (data.sns) lines.push('SNS：' + data.sns);
+        lines.push('配信したいアプリ：' + data.app, '配信の経験：' + data.exp, '顔出し：' + data.face);
+        if (data.note) lines.push('聞いてみたいこと：' + data.note);
+        document.getElementById('entry-text').textContent = lines.join('\n');
+        document.getElementById('done-dm').hidden = false;
+        document.getElementById('done-actions').hidden = false;
+      }
+      document.getElementById('done').scrollIntoView({ block: 'center', behavior: 'smooth' });
+    };
+
+    if (GOOGLE_FORM.action) {
+      var body = new URLSearchParams();
+      Object.keys(GOOGLE_FORM.entries).forEach(function (k) {
+        var v = data[k];
+        if (k === 'guardian') v = data.age === '17歳以下' ? 'あり' : '';
+        if (v === '未選択') v = '';
+        if (GOOGLE_FORM.entries[k] && v) body.append(GOOGLE_FORM.entries[k], v);
+      });
+      fetch(GOOGLE_FORM.action, { method: 'POST', mode: 'no-cors', body: body })
+        .then(function () { showDone(true); }, function () { showDone(false); });
+    } else {
+      showDone(false);
+    }
+  });
+})();
+
+// twinkling stars in the hero sky
+(function () {
+  var c = document.getElementById('stars'); if (!c) return;
+  var ctx = c.getContext('2d');
+  var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var stars = [], w = 0, h = 0, dpr = Math.min(window.devicePixelRatio || 1, 2);
+  function seed() {
+    var r = c.getBoundingClientRect(); w = r.width; h = r.height;
+    c.width = w * dpr; c.height = h * dpr; ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+    var n = Math.round(w * h / 9000); stars = [];
+    for (var i = 0; i < n; i++) {
+      stars.push({ x: Math.random() * w, y: Math.random() * h * .75, r: Math.random() * 1.3 + .3,
+        p: Math.random() * Math.PI * 2, s: Math.random() * .0015 + .0006, big: Math.random() < .07 });
+    }
+  }
+  function sparkle(x, y, len, a) {
+    ctx.strokeStyle = 'rgba(255,255,255,' + a + ')'; ctx.lineWidth = 1;
+    ctx.beginPath(); ctx.moveTo(x - len, y); ctx.lineTo(x + len, y); ctx.moveTo(x, y - len); ctx.lineTo(x, y + len); ctx.stroke();
+  }
+  function draw(t) {
+    ctx.clearRect(0, 0, w, h);
+    for (var i = 0; i < stars.length; i++) {
+      var s = stars[i], a = .45 + .55 * Math.abs(Math.sin(s.p + t * s.s));
+      ctx.fillStyle = 'rgba(255,255,255,' + a + ')';
+      ctx.beginPath(); ctx.arc(s.x, s.y, s.r, 0, Math.PI * 2); ctx.fill();
+      if (s.big) sparkle(s.x, s.y, 4 + 6 * a, a * .9);
+    }
+  }
+  function loop(t) { draw(t); requestAnimationFrame(loop); }
+  seed(); draw(0);
+  if (!reduce) requestAnimationFrame(loop);
+  window.addEventListener('resize', function () { seed(); draw(performance.now()); });
+})();
+</script>
+
+</body>
+</html>
